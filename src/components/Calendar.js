@@ -4,6 +4,7 @@ import MonthList from './MonthList';
 import MonthView from './MonthView';
 import YearMonthSwitch from './YearMonthSwitch';
 import LoadingIcon from '../1488.gif'
+import CalendarEvents from './CalendarEvents';
 
 export default function Calendar({
     onChange
@@ -11,12 +12,14 @@ export default function Calendar({
 
     const [activeDate, setActiveDate] = useState(null);
     const [activeBsDate, setActiveBsDate] = useState(null);
-    const [loading, setLoading] = useState(true)
+    const [loading, setLoading] = useState(true);
+    const [activeDay, setactiveDay] = useState(null);
 
     useEffect(() => {
         const loadDefault = () => {
             const date = new Date();
             setActiveDate(date);
+            setactiveDay(date.getDate());
             setActiveBsDate(calF.convertADtoBS(date.getFullYear(), date.getMonth() + 1, date.getDate()));
             setLoading(false);
         }
@@ -27,8 +30,8 @@ export default function Calendar({
         setActiveBsDate({ bsYear: year, bsMonth: month, bsDate: activeBsDate.bsDate })
     }
 
-    if( loading ){
-        return(
+    if (loading) {
+        return (
             <div className='loading_full'>
                 <img src={LoadingIcon} alt='Loading' />
             </div>
@@ -54,9 +57,20 @@ export default function Calendar({
                     viewBsYear={bsYear}
                     viewBsMonth={bsMonth}
                     defaultActiveDate={activeDate}
-                    onDayClicked={(date) => { onChange && onChange(date) }}
+                    onDayClicked={(date) => { 
+                        if( onChange ){
+                            onChange(date);
+                            setActiveDate(date)
+                        }
+                     }}
                 />
             </div>
+
+            <CalendarEvents
+                activeDate={activeDate}
+                defaultMonth={bsMonth}
+                defaultYear={bsYear}
+            />
         </div>
     );
 }

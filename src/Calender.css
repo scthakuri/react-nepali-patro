@@ -11,7 +11,6 @@
   background: #981f1e;
 }
 
-
 .loading_full {
   position: fixed;
   width: 100%;
@@ -170,4 +169,179 @@ button.icon-button > span.bars::after {
   text-align: center;
   font-weight: bold;
   font-size: 1.7rem;
+}
+
+.nepali-patro-today-date,
+body .nepali-patro-day:hover {
+  background: #981f1e;
+  color: #fff;
+  border: 1px solid #981f1e;
+}
+
+body .nepali-patro-day {
+  text-align: center;
+  font-size: 2rem !important;
+  font-weight: bold;
+  border: 1px solid #eee;
+  border-radius: 0 !important;
+  transition: 0.3s;
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+}
+
+
+
+body .nepali-patro-day span{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.nepali-patro-month {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.nepali-patro-month tr {
+  width: 100%;
+}
+
+.nepali-patro-month thead tr td{
+  margin: 0;
+  background: #981f1e;
+  padding: 1rem 0;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nepali-patro-disabled{
+    color: #ccc;
+    cursor: no-drop !important;
+}
+
+.nepali-patro-today-date.nepali-patro-disabled{
+    background-color:#ff7070;
+    color:#eee;
+}
+
+.calendar-events {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 23%;
+    background-color: #fbfbfb;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    transform: translateX(0);
+}
+
+.calendar-events-hide {
+  transform: translateX(-23%);
+}
+
+.calendar-inner{
+    width: 75%;
+}
+
+.event-date{
+    font-size: 10rem;
+    text-align: center;
+    color: #b71c1c;
+}
+
+.event-week-day{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: -8%;
+    left: 40%;
+}
+
+.event-day-wrap{
+    position: relative;
+}
+
+.event-header{
+    font-size: 30px;
+    font-weight: 600;
+    color: #5a5a5a;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.event-container {
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: baseline;
+}
+
+.event-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    transform: translate(15px,30px);
+    background-color: #eaeaea;
+    z-index: -1;
+}
+
+.no-dot{
+    padding-left: 0 !important;
+}
+
+.event-container.no-dot::before{
+    position: relative;
+}
+
+.no-dot .event-info{
+    margin:0 !important;
+}
+
+.event-container>.event-icon {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    float: left;
+}
+
+.event-container>.event-icon>div {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ff4d55;
+}
+
+.event-container>.event-info>p.event-title {
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.event-container>.event-info>p.event-desc {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.event-container>.event-info {
+    margin-left: 1rem;
+}
+
+.event-list{
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 80vh;
 }

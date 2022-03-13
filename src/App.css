@@ -64,7 +64,7 @@ body .r-n-cal-weekdays > div {
 body .rn-patro-day {
   width: 14%;
   text-align: center;
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
