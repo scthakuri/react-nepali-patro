@@ -2,11 +2,13 @@
     "name": "react-nepali-patro",
     "version": "1.0",
     "description": "React Package for Nepali Patro - BS Calendar",
+    "homepage": "https://sureshchand12a.github.io/react-nepali-patro/",
     "private": true,
     "dependencies": {
         "@testing-library/jest-dom": "^5.16.2",
         "@testing-library/react": "^12.1.4",
         "@testing-library/user-event": "^13.5.0",
+        "gh-pages": "^3.2.3",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
         "react-jss": "^10.9.0",
@@ -14,6 +16,8 @@
         "web-vitals": "^2.1.4"
     },
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
