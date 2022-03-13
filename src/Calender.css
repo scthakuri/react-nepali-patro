@@ -1,0 +1,173 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #981f1e;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #981f1e;
+}
+
+
+.loading_full {
+  position: fixed;
+  width: 100%;
+  background: rgb(255 0 0);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading_full img {
+  width: 50px;
+  height: 50px;
+}
+
+.rn-nepali-patro {
+  position: relative;
+  background-color: #fbfbfb;
+  color: #5a5a5a;
+  width: 100%;
+  -webkit-box-shadow: 0 10px 50px -20px #8773c1;
+  box-shadow: 0 10px 50px -20px #8773c1;
+  margin: 0 auto;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.calendar-sidebar {
+  position: fixed;
+  margin-top: 0;
+  width: 200px;
+  height: 100%;
+  float: left;
+  background: linear-gradient(to right, #9b2b2a, #d33939);
+  color: #fff;
+  box-shadow: 5px 0 18px -3px #981f1e;
+  transition: all 0.3s ease;
+  transform: translateX(0);
+  z-index: 99;
+}
+
+.calendar-sidebar-hide {
+  transform: translateX(-205px);
+}
+
+.month-list .calendar-months .active-month {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.calendar-sidebar > .calendar-year {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.icon-button {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
+}
+
+.calendar-sidebar > .calendar-year > button.icon-button {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  overflow: visible;
+}
+
+.calendar-sidebar .month-list {
+  height: calc(100% - 100px);
+  overflow-y: auto;
+}
+
+.calendar-sidebar .month-list .calendar-months {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.royal-navy .calendar-sidebar > .month-list > .calendar-months {
+  padding: 0 15px 0 0;
+}
+
+.calendar-sidebar > .month-list > .calendar-months > li {
+  padding: 7px 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.royal-navy .calendar-sidebar > .month-list > .calendar-months > li {
+  padding: 9px 30px;
+  border-radius: 0 25px 25px 0;
+}
+
+.royal-navy .calendar-sidebar > span#sidebarToggler {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0px;
+  right: -38px;
+  background-color: #f7be16;
+  border-radius: 0;
+  padding: 9px;
+  box-shadow: 0 5px 10px -3px #f7be16;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.icon-button > span.bars {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  display: block;
+  background-color: #fff;
+}
+
+.royal-navy button.icon-button > span.bars,
+.royal-navy button.icon-button > span.bars::before,
+.royal-navy button.icon-button > span.bars::after {
+  height: 3px;
+}
+
+button.icon-button > span.bars::before,
+button.icon-button > span.bars::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  display: block;
+  background-color: #fff;
+}
+
+.royal-navy button.icon-button > span.bars::before {
+  top: -6px;
+}
+
+.royal-navy button.icon-button > span.bars,
+.royal-navy button.icon-button > span.bars::before,
+.royal-navy button.icon-button > span.bars::after {
+  height: 3px;
+}
+
+.royal-navy button.icon-button > span.bars::after {
+  bottom: -6px;
+}
+
+.month_list_header {
+  padding: 25px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
