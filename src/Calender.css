@@ -252,6 +252,7 @@ body .nepali-patro-day span{
     font-size: 10rem;
     text-align: center;
     color: #b71c1c;
+    font-weight: bold;
 }
 
 .event-week-day{
@@ -431,4 +432,94 @@ body .loading_image img{
 
 body .loading_image{
   text-align: center;
+}
+
+@media only screen and (max-width:800px){
+  .calendar-inner{
+    width: 100%;
+  }
+
+  .calendar-events{
+    position: inherit;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  body .nepali-patro-day span{
+    display: none;
+  }
+
+  body .nepali-patro-day{
+    height: 60px;
+    font-size: 1rem !important;
+  }
+
+  .event-date{
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .event-week-day{
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    position: inherit;
+  }
+
+  .event-event-wrap{
+    margin-left: 1rem;
+    width: 100%;
+  }
+
+  .event-header{
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  body .loading_image{
+    height:25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  body .event-list{
+    height: 25vw;
+  }
+
+  body .event-day-wrap{
+    width:35%;
+  }
+}
+
+@media only screen and (max-width:350px){
+  body .nepali-patro-day{
+    height: 40px;
+    font-size: 0.8rem !important;
+  }
+
+  .nepali-patro-month thead tr td{
+    font-size: 0.8rem;
+  }
+
+  body .rn-patro-backBtn, body .rn-patro-forwardBtn{
+    margin-left: 0.5rem;
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+  }
+
+  body .rn-patro-yearBtn, body .rn-patro-monthBtn{
+    font-size: 1rem;
+  }
+
+  body .rn-patro-header{
+    padding:1rem 0;
+  }
+
+  .royal-navy .calendar-sidebar > span#sidebarToggler{
+    display: none;
+  }
 }

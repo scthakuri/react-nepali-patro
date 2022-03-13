@@ -26,15 +26,15 @@ export default function CalendarEvents({
                             throw "empty";
                         }
                     } catch (error) {
-                        setLoading(false);
+                        // setLoading(false);
                         setData(null);
                     }
                 }).catch((r) => {
-                    setLoading(false);
+                    // setLoading(false);
                     setData(null);
                 })
         } catch (error) {
-            setLoading(false);
+            // setLoading(false);
             setData(null);
         }
     }
@@ -66,36 +66,38 @@ export default function CalendarEvents({
                 <div className='event-week-day'>{calendarData.bsDaysFull[activeDate.getDay()]}</div>
             </div>
 
-            <div className="event-header">Events</div>
+            <div className='event-event-wrap'>
+                <div className="event-header">Events</div>
 
-            {
-                loading ?
-                    <div className='loading_image'>
-                        <img src={LoadingIcon} alt="Loading Icon" />
-                    </div>
-                    : <div className="event-list">
-                        {
-                            data && data.length > 0 ?
-                                data.map((item, index) => {
-                                    return (
-                                        <div className="event-container" key={index}>
-                                            <div className="event-icon"><div className="event-bullet-holiday"></div></div>
-                                            <div className="event-info">
-                                                <p className="event-title">{item.time}</p>
-                                                <p className="event-desc">{item.data}</p>
+                {
+                    loading ?
+                        <div className='loading_image'>
+                            <img src={LoadingIcon} alt="Loading Icon" />
+                        </div>
+                        : <div className="event-list">
+                            {
+                                data && data.length > 0 ?
+                                    data.map((item, index) => {
+                                        return (
+                                            <div className="event-container" key={index}>
+                                                <div className="event-icon"><div className="event-bullet-holiday"></div></div>
+                                                <div className="event-info">
+                                                    <p className="event-title">{item.time}</p>
+                                                    <p className="event-desc">{item.data}</p>
+                                                </div>
                                             </div>
+                                        )
+                                    })
+                                    : <div className="event-container no-dot">
+                                        <div className="event-info">
+                                            <p className="event-title">No Event Found</p>
+                                            <p className="event-desc">We cannot find any event related to this date.If you know any event then contribute us via HAMROCSIT.</p>
                                         </div>
-                                    )
-                                })
-                            : <div className="event-container no-dot">
-                                    <div className="event-info">
-                                        <p className="event-title">No Event Found</p>
-                                        <p className="event-desc">We cannot find any event related to this date.If you know any event then contribute us via HAMROCSIT.</p>
                                     </div>
-                                </div>
-                        }
-                    </div>
-            }
+                            }
+                        </div>
+                }
+            </div>
 
         </div>
 
