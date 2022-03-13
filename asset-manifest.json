@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-nepali-patro/static/css/main.7b4c4791.css",
-    "main.js": "/react-nepali-patro/static/js/main.bf4a6bae.js",
+    "main.css": "/react-nepali-patro/static/css/main.56bc6102.css",
+    "main.js": "/react-nepali-patro/static/js/main.ce920e11.js",
     "static/js/787.3716f4cb.chunk.js": "/react-nepali-patro/static/js/787.3716f4cb.chunk.js",
     "static/media/1488.gif": "/react-nepali-patro/static/media/1488.a1a996746e5e48352c81.gif",
     "index.html": "/react-nepali-patro/index.html",
-    "main.7b4c4791.css.map": "/react-nepali-patro/static/css/main.7b4c4791.css.map",
-    "main.bf4a6bae.js.map": "/react-nepali-patro/static/js/main.bf4a6bae.js.map",
+    "main.56bc6102.css.map": "/react-nepali-patro/static/css/main.56bc6102.css.map",
+    "main.ce920e11.js.map": "/react-nepali-patro/static/js/main.ce920e11.js.map",
     "787.3716f4cb.chunk.js.map": "/react-nepali-patro/static/js/787.3716f4cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b4c4791.css",
-    "static/js/main.bf4a6bae.js"
+    "static/css/main.56bc6102.css",
+    "static/js/main.ce920e11.js"
   ]
 }
