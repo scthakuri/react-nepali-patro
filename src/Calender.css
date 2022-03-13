@@ -345,3 +345,90 @@ body .nepali-patro-day span{
     overflow-x: hidden;
     height: 80vh;
 }
+
+
+.rn-patro-header,
+.r-n-cal-month-view {
+  width: auto !important;
+}
+
+body .r-n-cal-weekdays {
+  margin: 0;
+  background: #981f1e;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+body .r-n-cal-weekdays > div {
+  float: left;
+  width: 14%;
+  font-weight: bold;
+  text-align: center;
+}
+
+body .rn-patro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom,#b71c1c 0%,#b71c1c 100%);
+  margin: 0;
+  width: 100% !important;
+  padding: 2rem 0;
+}
+
+body .rn-patro-backBtn,
+body .rn-patro-forwardBtn{
+  width: 40px;
+  height: 40px;
+  background-color: #eee;
+  border-radius: 100%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body .rn-patro-backBtn{
+  background-image: url(../public/assets/img/prev.png);
+  margin-left: 2rem;
+}
+
+body .rn-patro-forwardBtn{
+  background-image: url(../public/assets/img/next.png);
+  margin-right: 2rem;
+}
+
+body .r-n-cal-middle_part {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body .rn-patro-monthBtn-active,
+body .rn-patro-yearBtn-active {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+body .rn-patro-yearBtn{
+  margin-bottom: 0.3rem;
+}
+
+body .rn-patro-yearBtn,
+body .rn-patro-monthBtn {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+body .loading_image img{
+  width: 30px;
+}
+
+body .loading_image{
+  text-align: center;
+}

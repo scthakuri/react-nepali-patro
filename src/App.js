@@ -1,4 +1,3 @@
-import './App.css';
 import './Calender.css';
 import Calendar from './components/Calendar';
 import React from 'react';
