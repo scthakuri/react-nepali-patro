@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-nepali-patro/static/css/main.ff44dc53.css",
+    "main.js": "/react-nepali-patro/static/js/main.25360ebd.js",
+    "static/js/787.3716f4cb.chunk.js": "/react-nepali-patro/static/js/787.3716f4cb.chunk.js",
+    "static/media/1488.gif": "/react-nepali-patro/static/media/1488.b69d4c2703416dfc710d.gif",
+    "static/media/logo.svg": "/react-nepali-patro/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react-nepali-patro/index.html",
+    "main.ff44dc53.css.map": "/react-nepali-patro/static/css/main.ff44dc53.css.map",
+    "main.25360ebd.js.map": "/react-nepali-patro/static/js/main.25360ebd.js.map",
+    "787.3716f4cb.chunk.js.map": "/react-nepali-patro/static/js/787.3716f4cb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff44dc53.css",
+    "static/js/main.25360ebd.js"
+  ]
+}
